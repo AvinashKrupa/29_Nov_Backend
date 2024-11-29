@@ -11,7 +11,7 @@ const PORT= process.env.PORT
 const app=express()
 DbCon()
 app.use(cors({
-    origin: 'http://localhost:5173', // Match your frontend's origin EXACTLY
+    origin: 'http://98.84.97.192:5173', // Match your frontend's origin EXACTLY
     credentials: true // Allow cookies to be sent and received
   }));
 app.use("/notifications", notificationRoutes);
